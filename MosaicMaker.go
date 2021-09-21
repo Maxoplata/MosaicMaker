@@ -2,7 +2,7 @@
  * MosaicMaker.go
  *
  * Creates a mosaic image png
- * usage: go build MosaicMaker.go && ./MosaicMaker TILE_SIZE INPUT_TYPE "input url/filepath" "output png file"
+ * usage: go build MosaicMaker.go && ./MosaicMaker TILE_SIZE "input url/filepath" "output png file"
  * example: go build MosaicMaker.go && ./MosaicMaker 20 "https://raw.githubusercontent.com/Maxoplata/misc/master/MosaicMaker/_readmeAssets/sampleInput.jpg" "./mosaic.png"
  * example: go build MosaicMaker.go && ./MosaicMaker 20 "./sampleInput.jpg" "./mosaic.png"
  *
