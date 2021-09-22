@@ -1,7 +1,7 @@
 /**
  * MosaicMaker.ts
  *
- * Creates a mosaic image png
+ * Creates a mosaic image
  * usage: ts-node MosaicMaker.ts TILE_SIZE "input url/filepath" "output png file"
  * example: ts-node MosaicMaker.ts 20 "https://raw.githubusercontent.com/Maxoplata/MosaicMaker/main/_readmeAssets/sampleInput.jpg" "./mosaic.png"
  * example: ts-node MosaicMaker.ts 20 "./sampleInput.jpg" "./mosaic.png"
