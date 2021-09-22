@@ -1,10 +1,10 @@
 /**
  * MosaicMaker.rs
  *
- * Creates a mosaic image png
+ * Creates a mosaic image
  * usage: cargo build && ./MosaicMaker TILE_SIZE "input url/filepath" "output png file"
- * example: cargo build && ./MosaicMaker 20 "https://raw.githubusercontent.com/Maxoplata/MosaicMaker/main/_readmeAssets/sampleInput.jpg" "./mosaic.png"
- * example: cargo build && ./MosaicMaker 20 "./sampleInput.jpg" "./mosaic.png"
+ * example: cargo build MosaicMaker.go && ./MosaicMaker 20 "https://raw.githubusercontent.com/Maxoplata/MosaicMaker/main/_readmeAssets/sampleInput.jpg" "./mosaic.png"
+ * example: cargo build MosaicMaker.go && ./MosaicMaker 20 "./sampleInput.jpg" "./mosaic.png"
  *
  * @author Maxamilian Demian
  * @link https://www.maxodev.org
@@ -36,7 +36,7 @@ fn main() {
 
     // validate input file
     let img_orig = if path::Path::new(input_file).exists() {
-        image::open(input_file).unwrap()
+        image::open(input_file).expect("Invalid image")
     } else {
         let img_from_url = match reqwest::blocking::get(input_file) {
             Ok(res) => {
@@ -96,7 +96,7 @@ fn main() {
 
             // create color tile
             let img_color = DynamicImage::ImageRgba8(ImageBuffer::from_fn(tile_size, tile_size, |_x, _y| {
-                image::Rgba([pixel.0[0] , pixel.0[1], pixel.0[2], 127])
+                image::Rgba([pixel.0[0], pixel.0[1], pixel.0[2], 127])
             }));
 
             // copy color tile to new image
@@ -104,6 +104,5 @@ fn main() {
         }
     }
 
-    // save image to file
-    img_new.save(output_file).unwrap();
+    img_new.save(output_file).expect("Error saving image file");
 }
