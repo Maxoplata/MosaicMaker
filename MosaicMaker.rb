@@ -3,7 +3,7 @@
 #
 # Creates a mosaic image png
 # usage: ruby MosaicMaker.rb TILE_SIZE "input url/filepath" "output png file"
-# example: ruby MosaicMaker.rb 20 "https://raw.githubusercontent.com/Maxoplata/misc/master/MosaicMaker/_readmeAssets/sampleInput.jpg" "./mosaic.png"
+# example: ruby MosaicMaker.rb 20 "https://raw.githubusercontent.com/Maxoplata/MosaicMaker/main/_readmeAssets/sampleInput.jpg" "./mosaic.png"
 # example: ruby MosaicMaker.rb 20 "./sampleInput.jpg" "./mosaic.png"
 #
 # @author Maxamilian Demian
