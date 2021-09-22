@@ -4,7 +4,7 @@ MosaicMaker.py
 
 Creates a mosaic image png
 usage: python MosaicMaker.py TILE_SIZE "input url/filepath" "output png file"
-example: python MosaicMaker.py 20 "https://raw.githubusercontent.com/Maxoplata/misc/master/MosaicMaker/_readmeAssets/sampleInput.jpg" "./mosaic.png"
+example: python MosaicMaker.py 20 "https://raw.githubusercontent.com/Maxoplata/MosaicMaker/main/_readmeAssets/sampleInput.jpg" "./mosaic.png"
 example: python MosaicMaker.py 20 "./sampleInput.jpg" "./mosaic.png"
 
 https://www.maxodev.org
