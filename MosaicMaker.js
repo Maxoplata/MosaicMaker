@@ -1,7 +1,7 @@
 /**
  * MosaicMaker.js
  *
- * Creates a mosaic image png
+ * Creates a mosaic image
  * usage: node MosaicMaker.js TILE_SIZE "input url/filepath" "output png file"
  * example: node MosaicMaker.js 20 "https://raw.githubusercontent.com/Maxoplata/MosaicMaker/main/_readmeAssets/sampleInput.jpg" "./mosaic.png"
  * example: node MosaicMaker.js 20 "./sampleInput.jpg" "./mosaic.png"
