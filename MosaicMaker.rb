@@ -1,7 +1,7 @@
 #!/usr/bin/ruby
 # MosaicMaker.rb
 #
-# Creates a mosaic image png
+# Creates a mosaic image
 # usage: ruby MosaicMaker.rb TILE_SIZE "input url/filepath" "output png file"
 # example: ruby MosaicMaker.rb 20 "https://raw.githubusercontent.com/Maxoplata/MosaicMaker/main/_readmeAssets/sampleInput.jpg" "./mosaic.png"
 # example: ruby MosaicMaker.rb 20 "./sampleInput.jpg" "./mosaic.png"
