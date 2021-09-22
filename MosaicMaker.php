@@ -4,7 +4,7 @@
  *
  * Creates a mosaic image png
  * usage: php MosaicMaker.php TILE_SIZE "input url/filepath" "output png file"
- * example: php MosaicMaker.php 20 "https://raw.githubusercontent.com/Maxoplata/misc/master/MosaicMaker/_readmeAssets/sampleInput.jpg" "./mosaic.png"
+ * example: php MosaicMaker.php 20 "https://raw.githubusercontent.com/Maxoplata/MosaicMaker/main/_readmeAssets/sampleInput.jpg" "./mosaic.png"
  * example: php MosaicMaker.php 20 "./sampleInput.jpg" "./mosaic.png"
  *
  * @author Maxamilian Demian <max@maxdemian.com>
