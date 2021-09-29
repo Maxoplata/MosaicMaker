@@ -3,8 +3,8 @@
  *
  * Creates a mosaic image
  * usage: cargo build && ./MosaicMaker TILE_SIZE "input url/filepath" "output png file"
- * example: cargo build MosaicMaker.go && ./MosaicMaker 20 "https://raw.githubusercontent.com/Maxoplata/MosaicMaker/main/_readmeAssets/sampleInput.jpg" "./mosaic.png"
- * example: cargo build MosaicMaker.go && ./MosaicMaker 20 "./sampleInput.jpg" "./mosaic.png"
+ * example: cargo build && ./MosaicMaker 20 "https://raw.githubusercontent.com/Maxoplata/MosaicMaker/main/_readmeAssets/sampleInput.jpg" "./mosaic.png"
+ * example: cargo build && ./MosaicMaker 20 "./sampleInput.jpg" "./mosaic.png"
  *
  * @author Maxamilian Demian
  * @link https://www.maxodev.org
