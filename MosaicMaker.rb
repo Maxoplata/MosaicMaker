@@ -40,7 +40,7 @@ else
 			else
 				# Magick::Image.read can handle URLs, but fails on HTTPS
 				# so we manually handle URLs
-				urlData = open(inputFile).read
+				urlData = URI.open(inputFile).read
 
 				imgOrig = Magick::ImageList.new
 				imgOrigResized = Magick::ImageList.new
